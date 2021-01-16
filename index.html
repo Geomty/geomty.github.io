@@ -3,9 +3,8 @@
   <head>
     <title>Geomty</title>
     <link rel="icon" href="https://yt3.ggpht.com/a-/AOh14GiZW_yMJ8fi6nIBkaVHQ2lmDVmp_c2O6QqWyGZZgw=s100-c-k-c0xffffffff-no-rj-mo">
-    <link rel="stylesheet" href="./stylesheets/index-stylesheet.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
     <meta charset="UTF-8">
-    <meta name="application-name" content="website">
     <meta name="author" content="Geomty">
     <meta name="description" content="Hi! I'm Geomty, a beginner in the vast world of programming.">
     <meta name="keywords" content="geomty">
@@ -17,20 +16,38 @@
     <meta property="og:image" content="https://yt3.ggpht.com/a-/AOh14GiZW_yMJ8fi6nIBkaVHQ2lmDVmp_c2O6QqWyGZZgw=s100-c-k-c0xffffffff-no-rj-mo" />
   </head>
   <body>
-    <h1>Geomty</h1>
-    <h2>About Me</h2>
-    <h3>Hi! My name is Geomty and I like to code! I mostly code in HTML, CSS and JavaScript but I might move on to other languages in the future.</h3>
-    <h3>My journey starts a couple months ago when I watched a documentary on coding, it completely inspired me. I was already pretty good with computers, programming would have been the perfect hobby for me. I'm always striving to learn more, knowledge is a powerful thing.</h3>
-    <h3>Take a look at some of my stuff below.</h3>
-    <h2>My Projects</h2>
-    <h3><a href="https://www.geometer.tk">A discord bot meant for games and fun!</a></h3>
-    <h3><a href="https://github.com/Geomty/ytapi-simplifier">A JavaScript module designed to simplify the YouTube API!</a></h3>
-    <h2>My Socials</h2>
-    <h3><a href="https://www.youtube.com/channel/UCYfHhvkYQrHd_BkFuvSiC7w">YouTube (I don't use it anymore)</a></h3>
-    <h3><a href="https://twitter.com/Geo_mty">Twitter</a></h3>
-    <h3><a href="https://twitch.tv/geomty">Twitch</a></h3>
-    <h3><a href="https://discord.gg/ZkJU4kZ">Discord</a></h3>
-    <img src="./images/geomty-icon.png" />
-    <h3>This page is viewed best in 1080p resolution and I'm too lazy to fix that.</h3>
+    <div id="firstbox">
+      <div id="firsttitle"></div>
+      <div id="firstdescription"></div>
+    </div>
+    <div id="secondbox" onclick="colorChange()">
+      <div id="secondtitle">About Me</div>
+      <div id="seconddescription"><br>I'm a (beginner) develper who codes in HTML, CSS, and JavaScript. I didn't know what else to put here, so click the page for a surprise.</div>
+    </div>
+    <div id="thirdbox">
+      <div id="thirdtitle">My Projects</div>
+      <div id="thirddescription">
+        <div id="geometer"><br><br><a href="https://www.geometer.tk">The best discord bot to fulfill all your needs!</a></div>
+        <div id="ytapi-simplifier"><a href="https://github.com/Geomty/ytapi-simplifier">A JavaScript module designed to simplify the YouTube API!</a></div>
+        <div id="questionmarks" onclick="noMoreProjects()">???</div>
+      </div>
+    </div>
+    <div id="fourthbox">
+      <div id="fourthtitle">My Socials</div>
+      <div id="fourthdescription">
+        <br><br><br>
+        <div id="youtube"><a href="https://www.youtube.com/channel/UCYfHhvkYQrHd_BkFuvSiC7w">YouTube</a></div>
+        <div id="twitter"><a href="https://twitter.com/Geo_mty">Twitter</a></div>
+        <div id="twitch"><a href="https://twitch.tv/geomty">Twitch</a></div>
+        <div id="discord"><a href="https://discord.gg/ZkJU4kZ">Discord</a></div>
+      </div>
+    </div>
+    <div id="fifthbox">
+      <div id="fifthtitle">This website is best viewed in 1080p resolution and I'm too lazy to fix that.</div>
+    </div>
+
+    <script src="./scripts/firstbox.js"></script>
+    <script src="./scripts/secondbox.js"></script>
+    <script src="./scripts/thirdbox.js"></script>
   </body>
 </html>

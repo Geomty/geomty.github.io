@@ -1,0 +1,156 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+div#firstbox, div#secondbox, div#thirdbox, div#fourthbox {
+  width: 100%;
+  height: 100%;
+}
+div#firstbox {
+  background-color: black;
+}
+div#secondbox {
+  background-color: yellow;
+}
+div#thirdbox {
+  background-color: red;
+}
+div#fourthbox {
+  background-color: green;
+}
+div#fifthbox {
+  width: 100%;
+  height: 10%;
+  background-color: orange;
+}
+div#firsttitle {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-right: 5px;
+  border-right: 5px solid;
+  font-family: 'Segoe UI';
+  font-size: 65px;
+  font-weight: bolder;
+}
+div#firstdescription {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Segoe UI';
+  font-size: 30px;
+  font-weight: bolder;
+}
+div#secondtitle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Segoe UI';
+  font-size: 65px;
+  font-weight: bolder;
+}
+div#seconddescription {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 158%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 30px;
+  font-weight: bolder;
+}
+div#thirdtitle {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 65px;
+  font-weight: bolder;
+}
+div#thirddescription {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 258%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 30px;
+  font-weight: bolder;
+}
+div#fourthtitle {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 65px;
+  font-weight: bolder;
+}
+div#fourthdescription {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 358%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 30px;
+  font-weight: bolder;
+}
+div#youtube:hover {
+  color: red;
+}
+div#twitter:hover {
+  color: #00C5FF;
+}
+div#twitch:hover {
+  color: purple;
+}
+div#discord:hover {
+  color: #7289da;
+}
+div#fifthtitle {
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 405%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 27px;
+  font-weight: bolder;
+}
