@@ -38,7 +38,7 @@ div#firsttitle {
   transform: translate(-50%, -50%);
   padding-right: 5px;
   border-right: 5px solid;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 65px;
   font-weight: bolder;
 }
@@ -50,7 +50,7 @@ div#firstdescription {
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -61,7 +61,7 @@ div#secondtitle {
   top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 65px;
   font-weight: bolder;
 }
@@ -73,7 +73,7 @@ div#seconddescription {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -86,7 +86,7 @@ div#thirdtitle {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 65px;
   font-weight: bolder;
 }
@@ -99,7 +99,7 @@ div#thirddescription {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -112,7 +112,7 @@ div#fourthtitle {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 65px;
   font-weight: bolder;
 }
@@ -125,9 +125,12 @@ div#fourthdescription {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 30px;
   font-weight: bolder;
+}
+div#github:hover {
+    color: #bababa;
 }
 div#youtube:hover {
   color: red;
@@ -150,7 +153,7 @@ div#fifthtitle {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: Selawik;
   font-size: 27px;
   font-weight: bolder;
 }
