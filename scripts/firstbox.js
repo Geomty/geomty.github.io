@@ -53,6 +53,5 @@ typeAndBackspace("firsttitle", secondSentence, 3250, 100, 5250, 50, true);
 typeAndBackspace("firsttitle", thirdSentence, 6750, 100, 9850, 50);
 
 setTimeout(() => {
-    document.getElementById("firstbox").style = "background-color:#00C5FF";
     document.getElementById("firstdescription").innerHTML = "Scroll down to see more about me";
 }, 9000);
