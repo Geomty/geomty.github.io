@@ -1,7 +1,3 @@
-@keyframes fadeIn {
-  from {background-color:black;}
-  to {background-color:#00c5ff;}
-}
 html, body {
   width: 100%;
   height: 100%;
@@ -11,40 +7,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
-div#particles, div#firstbox, div#secondbox, div#thirdbox, div#fourthbox {
+div#particles {
   width: 100%;
   height: 100%;
+  position: fixed;
 }
-div#particles {
-    position: fixed;
-}
-div#firstbox {
-  background-color: black;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 8.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  /* css animations the easy way */
-}
-div#secondbox {
-  background-color: purple;
-}
-div#thirdbox {
-  background-color: red;
-}
-div#fourthbox {
-  background-color: orange;
-}
-div#fifthbox {
+div#footer {
   width: 100%;
   height: 10%;
+  top: 405%;
   background-color: yellow;
 }
-div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#fifthtitle {
+div#footer, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footertext {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -103,8 +77,8 @@ div#twitch:hover {
 div#discord:hover {
   color: #7289da;
 }
-div#fifthtitle {
-  top: 405%;
+div#footertext {
+  top: 50%; /* idk either */
   font-size: 27px;
   color: black;
 }
