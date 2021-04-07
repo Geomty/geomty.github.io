@@ -25,3 +25,6 @@ div#fourohfourtitle {
   font-size: 30px;
   font-weight: bolder;
 }
+div#csserrortext {
+  opacity: 0;
+}
