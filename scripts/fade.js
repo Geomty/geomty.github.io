@@ -29,5 +29,5 @@ function bgColorInit() {
             $("body").addClass('color-' + colors[i+1]);
         }
     }
-    $("body").css("transition", "background-color 0.5s ease-in-out");
+    setTimeout(() => $("body").css("transition", "background-color 0.5s ease-in-out"), 100);
 }
