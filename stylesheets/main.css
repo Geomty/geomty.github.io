@@ -1,3 +1,11 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+div#everything {
+  opacity: 0;
+}
 .color-black {
   background-color: black;
 }
@@ -20,7 +28,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-div#particles {
+div#loading, div#particles {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -41,7 +49,18 @@ div#footer, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddes
   font-weight: bolder;
   color: white;
 }
-div#firsttitle, div#secondtitle, div#thirdtitle, div#fourthtitle {
+div#loadingtext {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Selawik;
+  font-weight: bolder;
+  color: white;
+}
+div#loadingtext, div#firsttitle, div#secondtitle, div#thirdtitle, div#fourthtitle {
   font-size: 65px;
 }
 div#seconddescription, div#thirddescription, div#fourthdescription {

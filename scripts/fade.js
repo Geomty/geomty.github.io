@@ -29,5 +29,10 @@ function bgColorInit() {
             $("body").addClass('color-' + colors[i+1]);
         }
     }
+
+    // theres a white flash when the page loads before the background color changes to what its supposed to be so the only purpose of this loading sceen is to cover that up
+    $("#everything").animate({ opacity: 1 }, 500);
+    $("#loading").animate({ opacity: 0 }, 500);
+    
     setTimeout(() => $("body").css("transition", "background-color 0.5s ease-in-out"), 100);
 }
