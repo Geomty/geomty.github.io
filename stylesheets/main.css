@@ -24,7 +24,7 @@ div#footer {
   top: 405%;
   background-color: yellow;
 }
-div#footer, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footertext {
+div#footer, div#loadingtext, #loadingimage, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footertext {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -35,15 +35,15 @@ div#footer, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddes
   color: white;
 }
 div#loadingtext {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 50%;
-  left: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
-  font-family: Selawik;
-  font-weight: bolder;
-  color: white;
+}
+#loadingimage {
+  top: 55%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
 }
 div#loadingtext, div#firsttitle, div#secondtitle, div#thirdtitle, div#fourthtitle {
   font-size: 65px;
