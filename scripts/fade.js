@@ -1,21 +1,19 @@
 let colors = ["black", "purple", "red", "orange"];
 bgColorInit();
 setTimeout(() => {
-    colors[0] = "blue";
+    colors[0] = "#00c5ff";
     fadeBgColor();
-}, 9000);
+}, 8700);
 window.addEventListener("scroll", fadeBgColor);
 
 let oldScrollY = 0;
 function fadeBgColor() {
     for (i=0;i<colors.length;i++) {
         if (window.scrollY < (window.innerHeight/2)) {
-            $("body").removeClass();
-            $("body").addClass('color-' + colors[0]);
+            $("body").css("background-color", colors[0]);
         } else if (window.scrollY>=(window.innerHeight*i+window.innerHeight/2)&&window.scrollY<=(window.innerHeight*(i+1)+window.innerHeight/2)) { // have fun reading this
             if (oldScrollY<(window.innerHeight*i+window.innerHeight/2)||oldScrollY>(window.innerHeight*(i+1)+window.innerHeight/2)) { // this too
-                $("body").removeClass();
-                $("body").addClass('color-' + colors[i+1]);
+                $("body").css("background-color", colors[i+1]);
             }
         }
     }
@@ -24,15 +22,9 @@ function fadeBgColor() {
 function bgColorInit() {
     for (i=0;i<colors.length;i++) {
         if (window.scrollY < (window.innerHeight/2)) {
-            $("body").addClass('color-' + colors[0]);
+            $("body").css("background-color", colors[0]);
         } else if (window.scrollY>=(window.innerHeight*i+window.innerHeight/2)&&window.scrollY<=(window.innerHeight*(i+1)+window.innerHeight/2)) {
-            $("body").addClass('color-' + colors[i+1]);
+            $("body").css("background-color", colors[i+1]);
         }
     }
-
-    // theres a white flash when the page loads before the background color changes to what its supposed to be so the only purpose of this loading sceen is to cover that up
-    $("#everything").animate({ opacity: 1 }, 500);
-    $("#loading").animate({ opacity: 0 }, 500);
-    
-    setTimeout(() => $("body").css("transition", "background-color 0.5s ease-in-out"), 100);
 }
