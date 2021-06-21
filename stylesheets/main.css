@@ -20,18 +20,13 @@ div#loading, div#particles {
   height: 100%;
   position: fixed;
 }
-div#footer {
-  width: 100%;
-  height: 10%;
-  top: 405%;
-  background-color: yellow;
-}
-div#footer, div#loadingtext, #loadingimage, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footertext {
+div#loadingtext, #loadingimage, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footer, div#footertext {
   position: absolute;
   margin: 0;
   padding: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 55%;
   font-family: Selawik;
   font-weight: bolder;
   text-align: center;
@@ -44,19 +39,20 @@ div#loadingtext {
   top: 55%;
   left: 49%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 9vmin;
+  height: 9vmin;
 }
 div#loadingtext, div#firsttitle, div#secondtitle, div#thirdtitle, div#fourthtitle {
-  font-size: 65px;
+  font-size: 7vmin;
 }
 div#firstdescription, div#seconddescription, div#thirddescription, div#fourthdescription {
-  font-size: 30px;
+  font-size: 3.5vmin;
 }
 div#firsttitle {
   top: 50%;
-  padding-right: 5px;
-  border-right: 5px solid;
+  width: auto;
+  padding-right: 0.45vmin;
+  border-right: 0.45vmin solid;
 }
 div#firstdescription {
   top: 58%;
@@ -65,19 +61,19 @@ div#secondtitle {
   top: 150%;
 }
 div#seconddescription {
-  top: 158%;
+  top: 160%;
 }
 div#thirdtitle {
   top: 250%;
 }
 div#thirddescription {
-  top: 258%;
+  top: 260%;
 }
 div#fourthtitle {
   top: 350%;
 }
 div#fourthdescription {
-  top: 358%;
+  top: 360%;
 }
 div#github:hover {
   color: #bababa;
@@ -88,8 +84,14 @@ div#youtube:hover {
 div#discord:hover {
   color: #7289da;
 }
+div#footer {
+  width: 100%;
+  height: 10%;
+  top: 405%;
+  background-color: yellow;
+}
 div#footertext {
   top: 50%; /* idk either */
-  font-size: 27px;
+  font-size: 3vmin;
   color: black;
 }

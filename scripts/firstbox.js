@@ -7,14 +7,14 @@ function blinkingCursor(id, speed, times) {
     var count = 0;
     var interval = setInterval(() => {
         if (boolean) {
-            document.getElementById(id).style = "padding-right:5px;border-right:5px solid";
+            document.getElementById(id).style = "padding-right:0.45vmin;border-right:0.45vmin solid";
             boolean = false;
         } else {
-            document.getElementById(id).style = "padding-right:10px;border-right:0px solid";
+            document.getElementById(id).style = "padding-right:0.9vmin;border-right:0 solid";
             boolean = true;
         }
         if (count == times) {
-            document.getElementById(id).style = "padding-right:10px;border-right:0px solid";
+            document.getElementById(id).style = "padding-right:0.9vmin;border-right:0 solid";
             clearInterval(interval);
         }
         count++;
