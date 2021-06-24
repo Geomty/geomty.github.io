@@ -54,4 +54,7 @@ typeAndBackspace("firsttitle", thirdSentence, 6750, 100, 9850, 50);
 
 setTimeout(() => {
     document.getElementById("firstdescription").innerHTML = "Scroll down to see more about me";
+    document.getElementById("firstdescription").addEventListener("click", event => {
+        document.getElementById("firsttitle").innerHTML = thirdSentence; // because sometimes javascript lags
+    })
 }, 9000);
