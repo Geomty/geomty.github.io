@@ -4,10 +4,15 @@ let toggleNum = document.cookie.length ? 0 : 300
 setTimeout(() => {
     colors[0] = "#00c5ff";
     fadeBgColor();
+    // yes
     $("#toggleswitch").css("display", "block");
     $("#toggletext").css("display", "block");
     $("#toggleswitch").animate({ opacity: 1 }, toggleNum);
     $("#toggletext").animate({ opacity: 1 }, toggleNum);
+    $("#fixbox").css("display", "block");
+    $("#fixtext").css("display", "block");
+    $("#fixbox").animate({ opacity: 1 }, toggleNum);
+    $("#fixtext").animate({ opacity: 1 }, toggleNum);
 }, 9000 - toggleNum);
 window.addEventListener("scroll", fadeBgColor);
 

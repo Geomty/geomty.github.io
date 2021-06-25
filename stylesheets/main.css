@@ -63,20 +63,36 @@ div#loading, div#particles {
 #toggleswitch input:checked + #toggleslider::before {
   transform: translateX(2.45vmin);
 }
-#toggleswitch, div#toggletext {
+#toggleswitch, div#toggletext, div#fixbox, div#fixtext {
   display: none;
   opacity: 0;
 }
-div#toggletext {
+div#toggletext, div#fixtext {
   position: absolute;
-  top: 0.8vmin;
   left: 8vmin;
   font-family: Selawik;
   font-weight: bolder;
   font-size: 2.5vmin;
   color: white;
 }
-div#loadingtext, #loadingimage, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footer, div#footertext {
+div#toggletext {
+  top: 0.8vmin;
+}
+div#fixbox {
+  position: absolute;
+  display: block;
+  top: 5vmin;
+  left: 1vmin;
+  width: 6vmin;
+  height: 3.5vmin;
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 3.5vmin;
+}
+div#fixtext {
+  top: 4.9vmin;
+}
+div#loadingtext, #loadingimage, .firsttitles, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footer, div#footertext {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -98,17 +114,22 @@ div#loadingtext {
   width: 9vmin;
   height: 9vmin;
 }
-div#loadingtext, div#firsttitle, div#secondtitle, div#thirdtitle, div#fourthtitle {
+div#loadingtext, .firsttitles, div#secondtitle, div#thirdtitle, div#fourthtitle {
   font-size: 7vmin;
 }
 div#firstdescription, div#seconddescription, div#thirddescription, div#fourthdescription {
   font-size: 3.5vmin;
 }
-div#firsttitle {
+.firsttitles {
   top: 50%;
   width: auto;
   padding-right: 0.45vmin;
   border-right: 0.45vmin solid;
+}
+div#backupfirsttitle {
+  opacity: 0;
+  padding-right: 0.9vmin;
+  border-right: 0 solid;
 }
 div#firstdescription {
   top: 59%;
