@@ -20,6 +20,62 @@ div#loading, div#particles {
   height: 100%;
   position: fixed;
 }
+#toggleslider, #toggleslider::before {
+  transition: 0.3s ease-in-out;
+}
+#toggleswitch, #toggleslider, #toggleslider::before {
+  position: absolute;
+}
+#toggleswitch, #toggleslider::before {
+  height: 3.5vmin;
+}
+#toggleswitch {
+  top: 1vmin;
+  left: 1vmin;
+  width: 6vmin;
+}
+#toggleslider {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 3.5vmin;
+}
+#toggleslider::before {
+  content: "";
+  top: 0.3vmin;
+  left: 0.3vmin;
+  height: 2.9vmin;
+  width: 2.9vmin;
+  background-color: white;
+  border-radius: 50%;
+}
+#toggleswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#toggleswitch input:checked + #toggleslider {
+  background-color: green;
+}
+#toggleswitch input:checked + #toggleslider::before {
+  transform: translateX(2.45vmin);
+}
+#toggleswitch, div#toggletext {
+  display: none;
+  opacity: 0;
+}
+div#toggletext {
+  position: absolute;
+  top: 0.8vmin;
+  left: 8vmin;
+  font-family: Selawik;
+  font-weight: bolder;
+  font-size: 2.5vmin;
+  color: white;
+}
 div#loadingtext, #loadingimage, div#firsttitle, div#firstdescription, div#secondtitle, div#seconddescription, div#thirdtitle, div#thirddescription, div#fourthtitle, div#fourthdescription, div#footer, div#footertext {
   position: absolute;
   margin: 0;
@@ -73,6 +129,7 @@ div#fourthtitle {
   top: 350%;
 }
 div#fourthdescription {
+  width: auto;
   top: 363%;
 }
 div#github:hover {

@@ -22,7 +22,12 @@
     </div>
 
     <div id="everything">
-      <div id="particles"></div>
+      <div id="particles" style="opacity: 1"></div>
+      <label id="toggleswitch">
+        <input type="checkbox">
+        <span id="toggleslider" onclick="toggle()"></span>
+      </label>
+      <div id="toggletext">Disable animations</div>
       <div id="firsttitle"></div>
       <div id="firstdescription"></div>
 
@@ -52,6 +57,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>particlesJS.load("particles", "./scripts/particles.json")</script>
     <script src="./scripts/loading.js"></script>
+    <script src="./scripts/toggle.js"></script>
     <script src="./scripts/fade.js"></script>
     <script src="./scripts/firstbox.js"></script>
     <script src="./scripts/secondbox.js"></script>

@@ -1,9 +1,14 @@
 let colors = ["black", "purple", "red", "orange"];
 bgColorInit();
+let toggleNum = document.cookie.length ? 0 : 300
 setTimeout(() => {
     colors[0] = "#00c5ff";
     fadeBgColor();
-}, 8700);
+    $("#toggleswitch").css("display", "block");
+    $("#toggletext").css("display", "block");
+    $("#toggleswitch").animate({ opacity: 1 }, toggleNum);
+    $("#toggletext").animate({ opacity: 1 }, toggleNum);
+}, 9000 - toggleNum);
 window.addEventListener("scroll", fadeBgColor);
 
 let oldScrollY = 0;
