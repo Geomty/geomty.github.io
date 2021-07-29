@@ -80,7 +80,6 @@ div#toggletext {
 }
 div#fixbox {
   position: absolute;
-  display: block;
   top: 5vmin;
   left: 1vmin;
   width: 6vmin;
