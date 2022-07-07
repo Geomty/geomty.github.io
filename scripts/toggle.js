@@ -13,7 +13,7 @@ function enable() {
 function toggle() {
     if ($("#particles").css("opacity") != 0) {
         disable();
-        document.cookie = `toggle=on; expires=Sat, 01 Jan 2022 00:00:00 UTC; path=/;`;
+        document.cookie = `toggle=on; expires=Sat, 01 Jan 2023 00:00:00 UTC; path=/;`;
     } else {
         enable();
         document.cookie = "toggle=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
