@@ -2,10 +2,61 @@
 <html lang="en">
   <head>
     <title>Geomty</title>
+    <link rel="icon" href="./assets/geomty-icon.png">
+    <link rel="stylesheet" href="./assets/index.css">
     <meta charset="UTF-8">
+    <meta name="author" content="Geomty">
+    <meta name="description" content="hello this is my website">
+    <meta name="keywords" content="geomty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Geomty">
+    <meta property="og:description" content="hello this is my website">
+    <meta property="og:url" content="https://geomty.github.io">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Geomty/geomty.github.io/main/assets/geomty-icon.png">
   </head>
   <body>
-    <div style="font-size:50px">This website is under maintenance.</div>
-    <div style="margin-top:10px;font-size:25px">Have a great day :)</div>
+    <div id="particles"></div>
+    <div class="box">
+      <div class="flexbox">
+        <img src="./assets/geomty-icon.png" alt="Geomty icon" id="icon">
+        <div id="title" class="text">Geomty</div>
+      </div>
+    </div>
+    <div id="about" class="box dynamicbox">
+      <div class="flexbox">
+        <div class="dash text">-</div>
+        <div class="text">About</div>
+      </div>
+      <ul class="dropdown">
+        <li class="dropdowntext text">- html, css, javascript, python, learning c++</li>
+        <li class="dropdowntext text">- amateur competitive programmer</li>
+      </ul>
+    </div>
+    <div id="projects" class="box dynamicbox">
+      <div class="flexbox">
+        <div class="dash text">-</div>
+        <div class="text">Projects</div>
+      </div>
+      <ul class="dropdown">
+        <li class="dropdowntext text">- nothing</li>
+        <li class="dropdowntext text">- honestly i don't remember why i made this website</li>
+      </ul>
+    </div>
+    <div id="socials" class="box dynamicbox">
+      <div class="flexbox">
+        <div class="dash text">-</div>
+        <div class="text">Socials</div>
+      </div>
+      <ul class="dropdown">
+        <li class="dropdowntext text"><a href="https://git.io/geomty">github</a></li>
+        <li class="dropdowntext text"><a href="https://www.youtube.com/@geomty">youtube</a></li>
+        <li class="dropdowntext text"><a href="https://steamcommunity.com/id/geomty">steam</a></li>
+        <li class="dropdowntext text"><a href="https://discord.gg/yXkB68EA8S">discord</a></li>
+      </ul>
+    </div>
+    <div id="disclaimer" class="text">zoom in or out to get a desired font size because im not good at this</div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS.load("particles", "./assets/particles.json")</script>
   </body>
 </html>
