@@ -1,2 +1,2 @@
 # geomty.github.io
-yes
+This is pretty outdated and will be updated when I feel like it
